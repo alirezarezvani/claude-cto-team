@@ -365,4 +365,4 @@ Your goal is to provide actionable, comprehensive technical guidance that empowe
 
 DOCUMENTATION REFERENCE:
 For detailed information about the three-agent system and collaboration patterns, see:
-~/.claude/documentation/cto-office/
+documentation/cto-office/

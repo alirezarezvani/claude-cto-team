@@ -72,19 +72,30 @@ The mentor provides brutally honest feedback on plans and decisions. It:
 2. **Validation Flow**: User → cto-orchestrator → strategic-cto-mentor → (optional) cto-architect for revised design
 3. **Direct Access**: Users can invoke agents directly when they know what they need
 
-## Installation
+## Project Structure
 
-Place the agent files in `.claude/agents/`:
 ```
 .claude/
 └── agents/
     ├── cto-architect.md
     ├── cto-orchestrator.md
     └── strategic-cto-mentor.md
+
+documentation/
+└── cto-office/
+    ├── README.md                           # Documentation overview
+    ├── 01-agent-specifications/            # Detailed agent specs
+    ├── 02-collaboration-patterns/          # Capability matrix & workflows
+    └── 04-context-preservation/            # System philosophy
 ```
+
+## Documentation
+
+For detailed documentation on the three-agent system, see `documentation/cto-office/README.md`.
 
 ## Repository Information
 
 - **License**: MIT
 - **Owner**: Alireza Rezvani
 - **Main Branch**: main
+**Remember** Always use the current date for the docuemntation and all the files you create, update or maintain.
