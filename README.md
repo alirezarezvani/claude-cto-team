@@ -175,51 +175,73 @@ General CTO-level guidance for complex or vague requests.
 
 ## Skills
 
-The CTO Team includes **4 specialized skills** that enhance agent capabilities:
+The CTO Team includes **12 specialized skills** that enhance agent capabilities:
 
-| Skill | Agent | Purpose |
-|-------|-------|---------|
-| **request-analyzer** | cto-orchestrator | Classifies requests, detects vagueness, suggests routing |
-| **clarification-protocol** | cto-orchestrator | Generates targeted clarifying questions |
-| **delegation-prompt-crafter** | cto-orchestrator | Creates structured prompts for specialist agents |
-| **validation-report-generator** | strategic-cto-mentor | Generates 8-section validation reports with verdicts |
+### Orchestrator Skills (cto-orchestrator)
+| Skill | Purpose |
+|-------|---------|
+| **request-analyzer** | Classifies requests, detects vagueness, suggests routing |
+| **clarification-protocol** | Generates targeted clarifying questions |
+| **delegation-prompt-crafter** | Creates structured prompts for specialist agents |
+| **cost-estimator** | Infrastructure and development cost estimation |
+
+### Architect Skills (cto-architect)
+| Skill | Purpose |
+|-------|---------|
+| **architecture-pattern-selector** | Select between Monolith, Microservices, Serverless |
+| **roadmap-generator** | Phased implementation plans with Epic/Story breakdown |
+| **tech-stack-recommender** | Technology stack selection by project type |
+| **scalability-advisor** | Scaling stages and capacity planning |
+| **ml-cv-specialist** | ML system design and model selection |
+
+### Mentor Skills (strategic-cto-mentor)
+| Skill | Purpose |
+|-------|---------|
+| **assumption-challenger** | Stress-test implicit assumptions in plans |
+| **antipattern-detector** | Detect common failure patterns |
+| **validation-report-generator** | 8-section validation reports with verdicts |
 
 Skills are automatically discovered and used by agents based on context.
 
 ## Prerequisites
 
-Before installing the CTO Team agents, ensure you have:
+Before installing the CTO Team plugin, ensure you have:
 
 - [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) installed and configured
 - An active Anthropic API key or Claude Pro/Max subscription
-- A project directory where you want to use the agents
 
 ## Installation
 
-### Option 1: Clone the Repository (Recommended)
+### Option 1: Plugin Install (Recommended)
+
+Install directly from GitHub with a single command:
+
+```bash
+claude /plugin install alirezarezvani/claude-cto-team
+```
+
+This installs agents, slash commands, and skills globally - available in all your projects!
+
+### Option 2: Clone to Project
+
+If you prefer project-specific installation:
 
 ```bash
 # Clone the repository
 git clone https://github.com/alirezarezvani/claude-cto-team.git
 
-# Copy the entire .claude folder to your project
-cp -r claude-cto-team/.claude /path/to/your/project/
+# Copy the plugin components to your project's .claude folder
+cp -r claude-cto-team/agents /path/to/your/project/.claude/
+cp -r claude-cto-team/commands /path/to/your/project/.claude/
+cp -r claude-cto-team/skills /path/to/your/project/.claude/
 ```
 
-This installs agents, slash commands, and skills in one step.
-
-### Option 2: Manual Setup
-
-1. Create the directory structure in your project:
-
-```bash
-mkdir -p .claude/agents .claude/commands .claude/skills
-```
-
-2. Download or copy files from this repository:
+### Plugin Structure
 
 ```
-.claude/
+claude-cto-team/
+├── .claude-plugin/
+│   └── plugin.json            # Plugin manifest
 ├── agents/                    # AI subagents
 │   ├── cto-architect.md
 │   ├── cto-orchestrator.md
@@ -230,13 +252,21 @@ mkdir -p .claude/agents .claude/commands .claude/skills
 │   ├── design.md
 │   └── validate.md
 └── skills/                    # Agent skills
+    ├── architecture-pattern-selector/
+    ├── assumption-challenger/
+    ├── antipattern-detector/
     ├── clarification-protocol/
+    ├── cost-estimator/
     ├── delegation-prompt-crafter/
+    ├── ml-cv-specialist/
     ├── request-analyzer/
+    ├── roadmap-generator/
+    ├── scalability-advisor/
+    ├── tech-stack-recommender/
     └── validation-report-generator/
 ```
 
-3. The agents and commands are automatically available in Claude Code when you open your project.
+The agents and commands are automatically available in Claude Code after installation.
 
 ## Usage Examples
 

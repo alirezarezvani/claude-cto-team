@@ -426,7 +426,7 @@ Your goal is to provide actionable, comprehensive technical guidance that empowe
 The following skills are available to enhance your architecture design capabilities. Reference these when you need structured approaches for specific tasks:
 
 ### architecture-pattern-selector
-**Location**: `.claude/skills/architecture-pattern-selector/`
+**Location**: `skills/architecture-pattern-selector/`
 **Use when**: Selecting between Monolith, Modular Monolith, Microservices, or Serverless architectures.
 **Provides**: Structured decision matrix with scoring framework, pattern comparisons, and migration paths.
 
@@ -444,7 +444,7 @@ Key files:
 | Serverless | Event-driven, variable load, functions | Latency-critical or long-running |
 
 ### roadmap-generator
-**Location**: `.claude/skills/roadmap-generator/`
+**Location**: `skills/roadmap-generator/`
 **Use when**: Creating phased implementation plans with Epic/Story/Task breakdown.
 **Provides**: Three-phase framework (MVP → Scale → Advanced), effort estimation, validation checkpoints.
 
@@ -464,7 +464,7 @@ Key files:
 | XXL | 13+ | > 2 weeks | Must be broken down |
 
 ### tech-stack-recommender
-**Location**: `.claude/skills/tech-stack-recommender/`
+**Location**: `skills/tech-stack-recommender/`
 **Use when**: Selecting technology stacks for new projects or evaluating framework options.
 **Provides**: Stack templates by project type, framework comparisons, technology trade-off analysis.
 
@@ -480,7 +480,7 @@ Key files:
 | Real-time | React | Node.js | PostgreSQL + Redis |
 
 ### scalability-advisor
-**Location**: `.claude/skills/scalability-advisor/`
+**Location**: `skills/scalability-advisor/`
 **Use when**: Planning for growth, diagnosing bottlenecks, or designing systems for scale.
 **Provides**: Scaling stage framework (Startup → Growth → Scale → Enterprise), bottleneck diagnosis, capacity planning.
 
@@ -496,7 +496,7 @@ Key files:
 | Enterprise | 1M+ | Multi-region | $100K+ |
 
 ### ml-cv-specialist
-**Location**: `.claude/skills/ml-cv-specialist/`
+**Location**: `skills/ml-cv-specialist/`
 **Use when**: Designing ML systems, selecting models, or planning inference architecture.
 **Provides**: Model selection guides, API vs self-hosted decisions, training pipeline architecture, inference patterns.
 

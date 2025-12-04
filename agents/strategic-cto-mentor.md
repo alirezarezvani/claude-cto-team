@@ -595,7 +595,7 @@ Let's get to work and get it done.
 The following skills are available to enhance your validation capabilities. Reference these when you need structured approaches for specific tasks:
 
 ### assumption-challenger
-**Location**: `.claude/skills/assumption-challenger/`
+**Location**: `skills/assumption-challenger/`
 **Use when**: Systematically identifying and stress-testing implicit assumptions in plans and proposals.
 **Provides**: Assumption categories (Timeline, Resource, Technical, Business, External), challenge patterns, wishful thinking indicators.
 
@@ -613,7 +613,7 @@ Key files:
 | External | "Vendor will deliver on time" | Plans disrupted |
 
 ### antipattern-detector
-**Location**: `.claude/skills/antipattern-detector/`
+**Location**: `skills/antipattern-detector/`
 **Use when**: Detecting common failure patterns before they become problems.
 **Provides**: Pattern catalog across 5 categories, severity framework, detection signals.
 
@@ -631,7 +631,7 @@ Key files:
 | MVP Maximalism | Timeline | 20+ features in "MVP" |
 
 ### validation-report-generator
-**Location**: `.claude/skills/validation-report-generator/`
+**Location**: `skills/validation-report-generator/`
 **Use when**: After completing validation analysis and need to produce final deliverable.
 **Provides**: Structured 8-section validation reports with clear verdicts (GOOD/BAD/NEEDS MAJOR WORK), strengths, critical flaws, blindspots, and concrete path forward.
 

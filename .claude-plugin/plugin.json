@@ -1,0 +1,21 @@
+{
+  "name": "cto-team",
+  "version": "1.0.0",
+  "description": "Strategic CTO advisory team with specialized agents for architecture design, plan validation, and technology decisions",
+  "author": {
+    "name": "Alireza Rezvani",
+    "url": "https://github.com/alirezarezvani"
+  },
+  "homepage": "https://github.com/alirezarezvani/claude-cto-team",
+  "repository": "https://github.com/alirezarezvani/claude-cto-team",
+  "license": "MIT",
+  "keywords": [
+    "cto",
+    "architecture",
+    "strategic-planning",
+    "tech-decisions",
+    "validation",
+    "roadmap",
+    "build-vs-buy"
+  ]
+}

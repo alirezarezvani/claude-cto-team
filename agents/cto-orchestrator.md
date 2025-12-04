@@ -328,7 +328,7 @@ You recognize when someone needs brutally honest strategic feedback and route th
 The following skills are available to enhance your orchestration capabilities. Reference these when you need structured approaches for specific tasks:
 
 ### request-analyzer
-**Location**: `.claude/skills/request-analyzer/`
+**Location**: `skills/request-analyzer/`
 **Use when**: Receiving new requests that need classification before routing to specialist agents.
 **Provides**: Intent detection, request type classification (design/validate/debug/document), complexity assessment, vague term identification, and suggested agent routing.
 
@@ -338,7 +338,7 @@ Key files:
 - `buzzword-dictionary.md` - Vague terms to challenge
 
 ### clarification-protocol
-**Location**: `.claude/skills/clarification-protocol/`
+**Location**: `skills/clarification-protocol/`
 **Use when**: After request-analyzer identifies clarification needs, before routing to specialist agents.
 **Provides**: Targeted clarifying questions (2-3 max) using challenge mode, not interview mode.
 
@@ -348,7 +348,7 @@ Key files:
 - `challenge-patterns.md` - Patterns for transforming neutral questions into effective challenges
 
 ### delegation-prompt-crafter
-**Location**: `.claude/skills/delegation-prompt-crafter/`
+**Location**: `skills/delegation-prompt-crafter/`
 **Use when**: After clarification is complete, before routing to specialist agents.
 **Provides**: Structured delegation prompts with CONTEXT/TASK/REQUIREMENTS format optimized for each agent type.
 
@@ -359,7 +359,7 @@ Key files:
 - `prompt-templates/ml-architect-delegation.md` - Template for cv-ml-architect
 
 ### cost-estimator
-**Location**: `.claude/skills/cost-estimator/`
+**Location**: `skills/cost-estimator/`
 **Use when**: Initial assessment of project scope, evaluating build vs buy decisions, or helping users understand budget implications.
 **Provides**: Infrastructure cost reference tables, development cost estimation frameworks, TCO comparison templates, and hidden cost checklists.
 
