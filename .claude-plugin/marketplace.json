@@ -4,11 +4,6 @@
     "name": "Alireza Rezvani",
     "email": "contact@alirezarezvani.com"
   },
-  "metadata": {
-    "description": "Strategic CTO advisory team marketplace for Claude Code",
-    "version": "1.0.0",
-    "updated": "2025-12-04"
-  },
   "plugins": [
     {
       "name": "cto-team",
@@ -32,15 +27,11 @@
         "tech-decisions",
         "validation",
         "roadmap",
-        "build-vs-buy"
+        "build-vs-buy",
+        "system-design",
+        "ml-architecture"
       ],
-      "category": "Strategic Advisory",
-      "tags": [
-        "architecture",
-        "planning",
-        "validation",
-        "decision-making"
-      ]
+      "category": "productivity"
     }
   ]
 }
